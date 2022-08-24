@@ -1,0 +1,329 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 4000;
+  margin: 0 10px 15px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 15px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+dl {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+dl dt {
+  width: 34%;
+  flex-direction: row;
+  position: relative;
+  left: 0.7px;
+  margin-right: 20px;
+}
+
+dl dd {
+  width: 35%;
+  margin-inline-start: 0;
+  justify-content: flex-end;
+} 
+
+input {
+  width: 55%;
+} 
+
+
+ img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #83092e;
+  padding: 20px 0px 0 20px;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 75px;
+  color: #ecdbc9;
+  margin-left: 5px;
+  margin-right: 75px;
+  position: relative;
+  right: 0.3px;
+}
+
+header nav ul li {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #ecdbc9;
+  text-decoration: none;
+  padding: 0 20px 20px 0;
+  font-size: 19px;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 28px;
+  right: 20px;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Join Form ------- */
+form {
+  border: 2px solid #6b1a22;
+  padding: 10px;
+  width: 105%;
+  position: relative;
+  right: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #83092e;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #83092e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px){
+  /* General CSS */
+
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  /* Join */
+
+  #join {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #join div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #join img {
+    width: 60%;
+  }
+
+  #join div section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin-left: auto; 
+    position: relative;
+    right: 50px;
+    padding: 40px 45px 90px 40px;
+  }
+
+  #join form {
+    width: 100%; 
+  }
+
+  .logo {
+    font-size: 48px;
+    padding-left: 5px;
+  }
+  
+dl dt {
+margin-right: 75px;
+flex-direction: row;
+position: relative;
+left: -1px;
+
+}
+
+dl dt button{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+  /* About */
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about img {
+    width: 25%;
+    justify-content: space-between;
+    padding: 8px;
+  }
+
+  #about div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about div section {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  /* Download */
+  #download {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #download img {
+    width: 48.5%;
+  }
+
+  #download div {
+    display: flex;
+  }
+
+  #download div section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .textme {
+    display: flex;
+    text-align: left;
+     width: 650px; 
+    flex-direction: column;
+  }
+
+  /* Blog */
+  #blog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #blog img {
+    width: 95%
+  }
+
+  .blog-column {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+
+  .blog-column > div {
+    display: flex; 
+    flex: 0 50%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+
+  .blog-column > div > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+
+  main img {
+    width: 100%;
+  }
+
+  form {
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    padding-right: 12px;
+    position: relative;
+    flex-basis: 250px;
+  }
+}
